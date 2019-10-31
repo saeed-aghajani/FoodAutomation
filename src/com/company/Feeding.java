@@ -1,6 +1,8 @@
+//Author: Saeed Aghajani
 package com.company;
 
-public class Feeding<NAME,FAMILY,DATE,FOOD,PRICE,IDCART,WEEKDAY> {
+public class Feeding<NAME, FAMILY, DATE, FOOD, PRICE, IDCART, WEEKDAY> {
+
     public NAME name;
     public FAMILY family;
     public DATE date;
@@ -65,17 +67,15 @@ public class Feeding<NAME,FAMILY,DATE,FOOD,PRICE,IDCART,WEEKDAY> {
         this.weekday = weekday;
     }
 
-    public void  changeFood(String oredered,String changed)
-    {
-        FOOD temp= (FOOD) oredered.replace(oredered,changed);
-        this.food=temp;
-        System.out.println("changed food is:"+temp);
+    public void changeFood(String oredered, String changed) {
+        FOOD temp = (FOOD) oredered.replace(oredered, changed);
+        this.food = temp;
+        System.out.println("changed food is:" + temp);
     }
 
-    public void changeCredit(String instance,String changed)
-    {
-        IDCART temp= (IDCART) instance.replace(instance,changed);
-        this.idcart=temp;
-        System.out.println("Changed credit is:"+temp);
+    public void changeCredit(String instance, String changed) {
+        IDCART temp = (IDCART) instance.replace(instance, changed);
+        this.idcart = temp;
+        System.out.println("Changed credit is:" + temp);
     }
 }
